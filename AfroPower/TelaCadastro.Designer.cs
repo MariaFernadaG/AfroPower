@@ -159,6 +159,6 @@
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.TextBox txt_Data;
         private System.Windows.Forms.ComboBox cb_Nivel;
-        private System.Windows.Forms.TextBox txt_nome;
+        public System.Windows.Forms.TextBox txt_nome;
     }
 }

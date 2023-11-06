@@ -20,50 +20,51 @@ namespace AfroPower
             return conexao;
         }
 
-        public static DataTable dql(string q)
+        public static DataTable dql(string sql)
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
             try
             {
-                using (var cmd = ConexaoBanco().CreateCommand())
-                {
-                    cmd.CommandText = q;
-                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+                    var conn = ConexaoBanco();
+                    var cmd = conn.CreateCommand();
+                    cmd.CommandText = sql;
+                    da = new SQLiteDataAdapter(cmd.CommandText, conn);
                     da.Fill(dt);
-                    ConexaoBanco().Close();
+                    conn.Close();
 
                     return dt;
-                }
+                
             }
             catch (Exception ex)
             {
-                ConexaoBanco().Close();
                 throw ex;
 
             }
         }
 
-        /*public static void dml(string q, string msgOK=null, string msgERRO=null)
+        public static void dml(string q, string msgOK=null, string msgERRO=null)
        {
-           try { 
-       var conn = ConexaoBanco();
-       var cmd = conn.CreateCommand();
-       cmd.CommandText="UPDATE tb_       SET 
-       da = new SQLiteDataAdapter(cmd.CommandText, conn);
-       cmd.ExecuteNonQuery();
-       conn.Close()
-        if(msgOK!=null){
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+             try { 
+                   var conn = ConexaoBanco();
+                   var cmd = conn.CreateCommand();
+                   cmd.CommandText = q;
+                   da = new SQLiteDataAdapter(cmd.CommandText, conn);
+                   cmd.ExecuteNonQuery();
+                   conn.Close();
+                    if(msgOK!=null){
 
-        MessageBox.Show(msgOK);
-        }
-       }catch(Exception ex){
-        if(msgERRO!=null){
-        MessageBox.Show(msgERRO+"\n"+ex.Message);
-        }
-       throw ex;
-       }
-    }*/
+                    MessageBox.Show(msgOK);
+                    }
+             }catch(Exception ex){
+                    if(msgERRO!=null){
+                    MessageBox.Show(msgERRO+"\n"+ex.Message);
+                    }
+                   throw ex;
+                   }
+                 }
 
 
         public static DataTable ObterTodosUsuarios()
@@ -72,14 +73,14 @@ namespace AfroPower
             DataTable dt = new DataTable();
             try
             {
-                using (var cmd = ConexaoBanco().CreateCommand())
-                {
-                    cmd.CommandText = "SELECT * FROM tb_usuarios";
-                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
-                    da.Fill(dt);
-                    ConexaoBanco().Close();
-                    return dt;
-                }
+                var conn = ConexaoBanco();
+                var cmd = conn.CreateCommand();
+                
+                cmd.CommandText = "SELECT * FROM tb_usuarios";
+                da = new SQLiteDataAdapter(cmd.CommandText, conn);
+                da.Fill(dt);
+                conn.Close();
+                return dt;
             }
             catch (Exception ex)
             {
@@ -94,19 +95,19 @@ namespace AfroPower
             DataTable dt = new DataTable();
             try
             {
-                using (var cmd = ConexaoBanco().CreateCommand())
-                {
-                    cmd.CommandText = sql;
-                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
-                    da.Fill(dt);
-                    ConexaoBanco().Close();
+                  var conn = ConexaoBanco();
+                  var cmd = conn.CreateCommand();
+                  cmd.CommandText = sql;
+                  da = new SQLiteDataAdapter(cmd.CommandText, conn);
+                  da.Fill(dt);
+                  conn.Close();
 
                     return dt;
-                }
+                
             }
             catch (Exception ex)
             {
-                ConexaoBanco().Close();
+              
                 throw ex;
 
             }
@@ -123,7 +124,8 @@ namespace AfroPower
             }
             try
             {
-                var cmd = ConexaoBanco().CreateCommand();
+                var conn = ConexaoBanco();
+                var cmd = conn.CreateCommand();
                 cmd.CommandText = "INSERT INTO tb_Usuarios (N_NOMEUSUARIO,N_EMAILUSUARIO,N_SENHAUSUARIO,N_DATANASCI,N_NIVEL)VALUES(@nome,@email,@senha,@data,@nivel)";
                 cmd.Parameters.AddWithValue("@nome", u.nome);
                 cmd.Parameters.AddWithValue("@email", u.email);
@@ -132,12 +134,11 @@ namespace AfroPower
                 cmd.Parameters.AddWithValue("@nivel", u.nivel);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Novo usuário cadastrado com sucesso!!!");
-                ConexaoBanco().Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro");
-                ConexaoBanco().Close();
             }
         }
         public static bool ExisteUsername(Usuario u)
@@ -145,9 +146,10 @@ namespace AfroPower
             bool res;
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
-            var cmd = ConexaoBanco().CreateCommand();
+            var conn = ConexaoBanco();
+            var cmd = conn.CreateCommand();
             cmd.CommandText = "SELECT N_EMAILUSUARIO FROM tb_Usuarios WHERE N_EMAILUSUARIO= '" + u.email + "'";
-            da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+            da = new SQLiteDataAdapter(cmd.CommandText, conn);
             da.Fill(dt);
 
             if (dt.Rows.Count > 0)

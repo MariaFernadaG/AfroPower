@@ -71,6 +71,7 @@
     <Compile Include="AdicionarHorario.Designer.cs">
       <DependentUpon>AdicionarHorario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agendamentos.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,11 +94,23 @@
     <Compile Include="TelaCadastro.Designer.cs">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaHorariosAgendados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaHorariosAgendados.Designer.cs">
+      <DependentUpon>TelaHorariosAgendados.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaMarcarhorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaMarcarhorario.Designer.cs">
+      <DependentUpon>TelaMarcarhorario.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -128,8 +141,14 @@
     <EmbeddedResource Include="TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelaHorariosAgendados.resx">
+      <DependentUpon>TelaHorariosAgendados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaMarcarhorario.resx">
+      <DependentUpon>TelaMarcarhorario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>

@@ -51,21 +51,28 @@
             // 
             this.txt_Email.BackColor = System.Drawing.Color.BurlyWood;
             this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txt_Email.Location = new System.Drawing.Point(658, 339);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(241, 15);
+            this.txt_Email.Size = new System.Drawing.Size(241, 20);
             this.txt_Email.TabIndex = 1;
+            this.txt_Email.Text = "Maria@gmail.com";
             // 
             // txt_Senha
             // 
             this.txt_Senha.BackColor = System.Drawing.Color.BurlyWood;
             this.txt_Senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Senha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txt_Senha.Location = new System.Drawing.Point(672, 424);
             this.txt_Senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Senha.Name = "txt_Senha";
-            this.txt_Senha.Size = new System.Drawing.Size(227, 15);
+            this.txt_Senha.Size = new System.Drawing.Size(227, 20);
             this.txt_Senha.TabIndex = 2;
+            this.txt_Senha.Text = "123";
+            this.txt_Senha.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 

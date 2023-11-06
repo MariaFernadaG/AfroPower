@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace AfroPower
 {
-    class Usuario
+    internal class Agendamentos
     {
-        public Int32 id=0;
+        
         public string nome;
-        public string data;
-        public string senha;
+        public string dataHorariomarcado;
         public string email;
-        public string nivel;
-
+        public string obervacao;
+        public string servico;
     }
 }

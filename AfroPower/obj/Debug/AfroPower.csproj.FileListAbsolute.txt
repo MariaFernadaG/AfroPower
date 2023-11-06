@@ -22,3 +22,5 @@ C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.csproj.CopyC
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaPrincipal.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.AdicionarHorario.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaBoasVindasCliente.resources
+C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaMarcarhorario.resources
+C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaHorariosAgendados.resources

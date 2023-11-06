@@ -34,5 +34,24 @@ namespace AfroPower
                 MessageBox.Show("Usuario nao permitido");
             }
         }
+
+        private void agendarHorárioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaMarcarhorario marcarhorario = new TelaMarcarhorario();
+            marcarhorario.Show();   
+        }
+
+        private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == trancistaToolStripMenuItem.Text)
+            {
+               TelaHorariosAgendados a = new TelaHorariosAgendados();
+               a.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario nao permitido");
+            }
+        }
     }
 }

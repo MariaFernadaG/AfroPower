@@ -34,6 +34,7 @@
             this.manutençõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trancistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarHorarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,19 +63,21 @@
             // agendarHorárioToolStripMenuItem1
             // 
             this.agendarHorárioToolStripMenuItem1.Name = "agendarHorárioToolStripMenuItem1";
-            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(204, 26);
             this.agendarHorárioToolStripMenuItem1.Text = "Agendar Horário";
+            this.agendarHorárioToolStripMenuItem1.Click += new System.EventHandler(this.agendarHorárioToolStripMenuItem1_Click);
             // 
             // manutençõesToolStripMenuItem
             // 
             this.manutençõesToolStripMenuItem.Name = "manutençõesToolStripMenuItem";
-            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.manutençõesToolStripMenuItem.Text = "Manutenções ";
             // 
             // trancistaToolStripMenuItem
             // 
             this.trancistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adicionarHorarioToolStripMenuItem});
+            this.adicionarHorarioToolStripMenuItem,
+            this.horáriosToolStripMenuItem});
             this.trancistaToolStripMenuItem.Name = "trancistaToolStripMenuItem";
             this.trancistaToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.trancistaToolStripMenuItem.Text = "Trancista";
@@ -85,6 +88,13 @@
             this.adicionarHorarioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.adicionarHorarioToolStripMenuItem.Text = "Adicionar horario";
             this.adicionarHorarioToolStripMenuItem.Click += new System.EventHandler(this.adicionarHorarioToolStripMenuItem_Click);
+            // 
+            // horáriosToolStripMenuItem
+            // 
+            this.horáriosToolStripMenuItem.Name = "horáriosToolStripMenuItem";
+            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.horáriosToolStripMenuItem.Text = "Horários Agendados";
+            this.horáriosToolStripMenuItem.Click += new System.EventHandler(this.horáriosToolStripMenuItem_Click);
             // 
             // TelaPrincipal
             // 
@@ -110,5 +120,6 @@
         private System.Windows.Forms.ToolStripMenuItem manutençõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trancistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionarHorarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem horáriosToolStripMenuItem;
     }
 }

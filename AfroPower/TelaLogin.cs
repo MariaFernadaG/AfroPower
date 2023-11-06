@@ -14,10 +14,12 @@ namespace AfroPower
     {
 
         DataTable dt = new DataTable();
+        
         public TelaLogin()
         {
             InitializeComponent();
-        }
+            
+    }
 
         private void TelaLogin_Load(object sender, EventArgs e)
         {
@@ -30,7 +32,7 @@ namespace AfroPower
             string senha = txt_Senha.Text;
             if (email == "" || senha == "")
             {
-                MessageBox.Show("Usuário ou senha inválidos");
+                MessageBox.Show("Preencha todos os campos");
                 txt_Email.Focus();
                 return;
             }
@@ -38,15 +40,14 @@ namespace AfroPower
             dt = Banco.consulta(sql);
             if (dt.Rows.Count == 1)
             {
-
+                Globais.nome= dt.Rows[0].Field<string>("N_NOMEUSUARIO");
                 Globais.nivel = dt.Rows[0].Field<string>("N_NIVEL");
-                MessageBox.Show("Usuario encontrado");
                 TelaPrincipal principal = new TelaPrincipal();
                 principal.Show();
             }
             else
             {
-                MessageBox.Show("Usuario nao encontrado");
+                MessageBox.Show("Usuário ou senha inválidos");
             }
         }
     }
