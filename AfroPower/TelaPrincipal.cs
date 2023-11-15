@@ -53,5 +53,15 @@ namespace AfroPower
                 MessageBox.Show("Usuario nao permitido");
             }
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.nivel == trancistaToolStripMenuItem.Text)
+            {
+                Cliente cliente = new Cliente();
+                cliente.Show();
+            }
+          
+        }
     }
 }

@@ -15,35 +15,62 @@ namespace AfroPower
 {
     public partial class AdicionarHorario : Form
     {
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         public AdicionarHorario()
         {
             InitializeComponent();
+            dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            Controls.Add(dateTimePicker1);
+
+            // Configurar as propriedades do DateTimePicker conforme necessário
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Location = new System.Drawing.Point(20, 20);
+            // ... outras configurações
+
+            // Adicionar um manipulador de eventos para lidar com a mudança de valor
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
         }
 
        
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-           
+            FiltrarPorData(dateTimePicker1.Value);
 
         }
 
-       
+        private void FiltrarPorData(DateTime data)
+        {
+            string formattedDate = data.ToString("dd/MM/yyyy");
+           
+
+            // Certifique-se de que está usando DateTime como tipo de dado
+            if (data is DateTime)
+            {
+                formattedDate = ((DateTime)data).ToString("dd/MM/yyyy");
+            }
+
+            string vquery = @"
+                SELECT 
+                    N_IDFUNCIONARIO as 'ID',
+                    T_FUNCIONARIO as 'Funcionario',
+                    T_DIA as 'Dia',
+                    T_DESCRICAOHORARIO as 'Horários',
+                    T_STATUS as 'Status'
+                FROM 
+                    Tb_AdicionarHorario
+                WHERE
+                    T_DIA = '" + formattedDate + "'";
+           
+
+
+            dgv_horarios.DataSource = Banco.consulta(vquery);
+        }
 
         private void AdicionarHorario_Load(object sender, EventArgs e)
         {
-            string vquery = @"
-            SELECT 
-                N_IDFUNCIONARIO as 'ID',
-                T_FUNCIONARIO as 'Funcionario',
-                T_DIA as 'Dia',
-                T_DESCRICAOHORARIO as 'Horários',
-                T_STATUS as 'Status'
-                FROM 
-            Tb_AdicionarHorario
-            ";
-            dgv_horarios.DataSource = Banco.consulta(vquery);
-            /*dgv_horarios.Columns[0].Width = 60;
-            dgv_horarios.Columns[1].Width = 50;*/
+            dateTimePicker1.Value = DateTime.Today;
+            FiltrarPorData(dateTimePicker1.Value);
+
         }
 
         private void btn_salvar_Click(object sender, EventArgs e)

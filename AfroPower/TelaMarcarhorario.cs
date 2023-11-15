@@ -39,6 +39,16 @@ namespace AfroPower
 
 
             cb_Adicionais.Items.AddRange(adicionais.Keys.ToArray());
+            dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            Controls.Add(dateTimePicker1);
+
+            // Configurar as propriedades do DateTimePicker conforme necessário
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Location = new System.Drawing.Point(20, 20);
+            // ... outras configurações
+
+            // Adicionar um manipulador de eventos para lidar com a mudança de valor
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
 
         }
 
@@ -88,6 +98,8 @@ namespace AfroPower
         private void TelaMarcarhorario_Load(object sender, EventArgs e)
         {
             CarregarDadosDoDataGridView();
+            dateTimePicker1.Value = DateTime.Today;
+            FiltrarPorData2(dateTimePicker1.Value);
 
 
         }
@@ -198,10 +210,38 @@ namespace AfroPower
             }
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            FiltrarPorData2(dateTimePicker1.Value);
+        }
 
-        
-        
+        private void FiltrarPorData2(DateTime data)
+        {
+            string formattedDate = data.ToString("dd/MM/yyyy");
 
+
+            // Certifique-se de que está usando DateTime como tipo de dado
+            if (data is DateTime)
+            {
+                formattedDate = ((DateTime)data).ToString("dd/MM/yyyy");
+            }
+
+            string vquery = @"
+                SELECT 
+                    N_IDFUNCIONARIO as 'ID',
+                    T_FUNCIONARIO as 'Funcionario',
+                    T_DIA as 'Dia',
+                    T_DESCRICAOHORARIO as 'Horários',
+                    T_STATUS as 'Status'
+                FROM 
+                    Tb_AdicionarHorario
+                WHERE
+                    T_DIA = '" + formattedDate + "'";
+
+
+
+            dgv_horariosmarcar.DataSource = Banco.consulta(vquery);
+        }
     }
 
 }

@@ -30,7 +30,7 @@
         {
             this.dgv_HorariosAgendados = new System.Windows.Forms.DataGridView();
             this.Horários = new System.Windows.Forms.Label();
-            this.dt_Filtro = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HorariosAgendados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,20 +56,20 @@
             this.Horários.TabIndex = 1;
             this.Horários.Text = "label1";
             // 
-            // dt_Filtro
+            // dateTimePicker1
             // 
-            this.dt_Filtro.Location = new System.Drawing.Point(121, 528);
-            this.dt_Filtro.Name = "dt_Filtro";
-            this.dt_Filtro.Size = new System.Drawing.Size(298, 22);
-            this.dt_Filtro.TabIndex = 2;
-            this.dt_Filtro.ValueChanged += new System.EventHandler(this.dt_Filtro_ValueChanged);
+            this.dateTimePicker1.Location = new System.Drawing.Point(197, 609);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // TelaHorariosAgendados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.dt_Filtro);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Horários);
             this.Controls.Add(this.dgv_HorariosAgendados);
             this.Name = "TelaHorariosAgendados";
@@ -85,6 +85,6 @@
 
         private System.Windows.Forms.DataGridView dgv_HorariosAgendados;
         private System.Windows.Forms.Label Horários;
-        private System.Windows.Forms.DateTimePicker dt_Filtro;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
