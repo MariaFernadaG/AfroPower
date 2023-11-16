@@ -30,7 +30,7 @@
         {
             this.dgv_HorariosAgendados = new System.Windows.Forms.DataGridView();
             this.Horários = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HorariosAgendados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,41 +38,51 @@
             // 
             this.dgv_HorariosAgendados.AllowUserToAddRows = false;
             this.dgv_HorariosAgendados.AllowUserToDeleteRows = false;
+            this.dgv_HorariosAgendados.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgv_HorariosAgendados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_HorariosAgendados.Location = new System.Drawing.Point(57, 179);
+            this.dgv_HorariosAgendados.Location = new System.Drawing.Point(82, 218);
             this.dgv_HorariosAgendados.Name = "dgv_HorariosAgendados";
             this.dgv_HorariosAgendados.ReadOnly = true;
             this.dgv_HorariosAgendados.RowHeadersWidth = 51;
             this.dgv_HorariosAgendados.RowTemplate.Height = 24;
-            this.dgv_HorariosAgendados.Size = new System.Drawing.Size(1431, 250);
+            this.dgv_HorariosAgendados.Size = new System.Drawing.Size(1424, 625);
             this.dgv_HorariosAgendados.TabIndex = 0;
             // 
             // Horários
             // 
             this.Horários.AutoSize = true;
-            this.Horários.Location = new System.Drawing.Point(34, 79);
+            this.Horários.Font = new System.Drawing.Font("Lucida Handwriting", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Horários.Location = new System.Drawing.Point(238, 41);
             this.Horários.Name = "Horários";
-            this.Horários.Size = new System.Drawing.Size(44, 16);
+            this.Horários.Size = new System.Drawing.Size(973, 104);
             this.Horários.TabIndex = 1;
-            this.Horários.Text = "label1";
+            this.Horários.Text = "Horários Agendados";
             // 
-            // dateTimePicker1
+            // label1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(197, 609);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Papyrus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 37);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Selecione uma data:";
             // 
             // TelaHorariosAgendados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.dateTimePicker1);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(1600, 1102);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Horários);
             this.Controls.Add(this.dgv_HorariosAgendados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TelaHorariosAgendados";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaHorariosAgendados";
             this.Load += new System.EventHandler(this.TelaHorariosAgendados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HorariosAgendados)).EndInit();
@@ -85,6 +95,6 @@
 
         private System.Windows.Forms.DataGridView dgv_HorariosAgendados;
         private System.Windows.Forms.Label Horários;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }

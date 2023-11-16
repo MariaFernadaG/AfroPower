@@ -30,7 +30,7 @@ namespace AfroPower
                     N_NOMEUSUARIO as 'Usuarios',
                     N_EMAILUSUARIO as 'Email',
                     N_NIVEL as 'Nivel',
-                    N_NUMERO as 'vindas'
+                    N_NUMERO as 'Vindas'
                 FROM 
                   tb_Usuarios                      
             ";
@@ -44,11 +44,9 @@ namespace AfroPower
             DialogResult res = MessageBox.Show("Confirma Exclusão?", "Excluir?", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
-                string idUsuario = dgv_Clientes.CurrentRow.Cells["Usuarios"].Value.ToString();
+                int idUsuario = Convert.ToInt32(dgv_Clientes.CurrentRow.Cells["ID"].Value); 
 
                 string vquery = $"DELETE FROM Tb_Usuarios WHERE N_IDUSUARIO = '{idUsuario}'";
-                Banco.dml(vquery);
-
                 Banco.dml(vquery);
                 dgv_Clientes.Rows.Remove(dgv_Clientes.CurrentRow);
             }

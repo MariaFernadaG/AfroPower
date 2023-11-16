@@ -12,6 +12,8 @@ namespace AfroPower
 {
     public partial class TelaHorariosAgendados : Form
     {
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private bool filtroAtivo = false;
         public TelaHorariosAgendados()
         {
             InitializeComponent();
@@ -20,7 +22,7 @@ namespace AfroPower
 
             // Configurar as propriedades do DateTimePicker conforme necessário
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Location = new System.Drawing.Point(20, 20);
+            dateTimePicker1.Location = new System.Drawing.Point(60, 140);
             // ... outras configurações
 
             // Adicionar um manipulador de eventos para lidar com a mudança de valor
@@ -40,108 +42,85 @@ namespace AfroPower
        
         private void TelaHorariosAgendados_Load(object sender, EventArgs e)
         {
-          
+            MostrarTodosHorariosIndisponiveis();
+        }
+        private void MostrarTodosHorariosIndisponiveis()
+        {
             string vquery = @"
-        SELECT 
-            N_IDFUNCIONARIO as 'ID',
-            T_FUNCIONARIO as 'Funcionario',
-            T_DIA as 'Dia',
-            T_DESCRICAOHORARIO as 'Horários',
-            T_SERVICO as 'Nagos',
-            T_ADICIONAL as 'Box Braids',
-            N_VALORTOTAL as 'Valor',
-            T_NOMECLIENTE as 'Cliente',
-            T_OBESERVACAOCLIENTE as 'Observação'
-           
-        FROM 
-            Tb_AdicionarHorario
-        WHERE T_STATUS = 'Indisponível';  -- Filtra somente horários disponíveis
-    ";
+            SELECT 
+                N_IDFUNCIONARIO as 'ID',
+                T_FUNCIONARIO as 'Funcionario',
+                T_DIA as 'Dia',
+                T_DESCRICAOHORARIO as 'Horários',
+                T_SERVICO as 'Nagos',
+                T_ADICIONAL as 'Box Braids',
+                N_VALORTOTAL as 'Valor',
+                T_NOMECLIENTE as 'Cliente',
+                T_OBESERVACAOCLIENTE as 'Observação'
+            FROM 
+                Tb_AdicionarHorario
+            WHERE T_STATUS = 'Indisponível';";
 
             DataTable dt = Banco.consulta(vquery);
             dgv_HorariosAgendados.DataSource = dt;
         }
-        private void FiltrarPorData(DateTime data)
-        {
-            string formattedDate = data.ToString("dd/MM/yyyy");
-
-
-            // Certifique-se de que está usando DateTime como tipo de dado
-            if (data is DateTime)
-            {
-                formattedDate = ((DateTime)data).ToString("dd/MM/yyyy");
-            }
-
-            string vquery = @"
-                SELECT 
-                    N_IDFUNCIONARIO as 'ID',
-                    T_FUNCIONARIO as 'Funcionario',
-                    T_DIA as 'Dia',
-                    T_DESCRICAOHORARIO as 'Horários',
-                    T_STATUS as 'Status'
-                FROM 
-                    Tb_AdicionarHorario
-                WHERE
-                    T_DIA = '" + formattedDate + "'";
-
-
-
-            dgv_HorariosAgendados.DataSource = Banco.consulta(vquery);
-        }
-
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            FiltrarPorData(dateTimePicker1.Value);
+            filtroAtivo = true; // Ativa o filtro quando o valor do DateTimePicker é alterado
+            FiltrarPorData2(dateTimePicker1.Value);
         }
         private void FiltrarPorData2(DateTime data)
         {
             string formattedDate = data.ToString("dd/MM/yyyy");
 
-
-            // Certifique-se de que está usando DateTime como tipo de dado
-            if (data is DateTime)
+            // Verifica se o filtro está ativo para aplicar o filtro de data
+            if (filtroAtivo)
             {
-                formattedDate = ((DateTime)data).ToString("dd/MM/yyyy");
-            }
-
-            string vquery = @"
+                string vquery = @"
                 SELECT 
-                    N_IDFUNCIONARIO as 'ID',
-                    T_FUNCIONARIO as 'Funcionario',
-                    T_DIA as 'Dia',
-                    T_DESCRICAOHORARIO as 'Horários',
-                    T_STATUS as 'Status'
+                N_IDFUNCIONARIO as 'ID',
+                T_FUNCIONARIO as 'Funcionario',
+                T_DIA as 'Dia',
+                T_DESCRICAOHORARIO as 'Horários',
+                T_SERVICO as 'Nagos',
+                T_ADICIONAL as 'Box Braids',
+                N_VALORTOTAL as 'Valor',
+                T_NOMECLIENTE as 'Cliente',
+                T_OBESERVACAOCLIENTE as 'Observação'
                 FROM 
                     Tb_AdicionarHorario
                 WHERE
-                    T_DIA = '" + formattedDate + "'";
+                    T_DIA = '" + formattedDate + @"' AND
+                    T_STATUS = 'Indisponível'";
 
-
-
-            dgv_HorariosAgendados.DataSource = Banco.consulta(vquery);
-        }
-
-      
-
-        private void DataGridViewButtonClicked(object sender, DataGridViewCellEventArgs e)
-        {
-            // Verifica se o clique foi na coluna do botão e faz algo
-            int columnIndexAcao = dgv_HorariosAgendados.Columns["Ação"]?.Index ?? -1; // Obtém o índice da coluna "Ação" ou define -1 se não encontrar
-            if (e.ColumnIndex == columnIndexAcao && e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgv_HorariosAgendados.Rows[e.RowIndex];
-                if (row.Cells["ID"].Value != null && int.TryParse(row.Cells["ID"].Value.ToString(), out int idCliente))
-                {
-                    AtualizarNumeroConsultasCliente(idCliente);
-                }
-                else
-                {
-                    MessageBox.Show("NULLLL");
-                }
+                DataTable dt = Banco.consulta(vquery);
+                dgv_HorariosAgendados.DataSource = dt;
             }
         }
 
+
+
+        private void DataGridViewButtonClicked(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender;
+            int columnIndex = dgv.Columns["Ação"]?.Index ?? -1;
+
+            if (e.RowIndex >= 0 && e.ColumnIndex == columnIndex)
+            {
+                string idCliente = dgv.Rows[e.RowIndex].Cells["ID"].Value?.ToString();
+
+                if (!string.IsNullOrEmpty(idCliente))
+                {
+                    // Converte o ID do cliente para um inteiro
+                    if (int.TryParse(idCliente, out int parsedIdCliente))
+                    {
+                        // Atualiza o número de consultas do cliente
+                        AtualizarNumeroConsultasCliente(parsedIdCliente);
+                    }
+                }
+            }
+        }
         private void AtualizarNumeroConsultasCliente(int idCliente)
         {
             string vquery = $"UPDATE tb_Usuarios SET N_Numero = N_Numero + 1 WHERE N_IDUSUARIO = {idCliente}";
