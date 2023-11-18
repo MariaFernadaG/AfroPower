@@ -25,3 +25,30 @@ C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaBoasVind
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaMarcarhorario.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.TelaHorariosAgendados.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\obj\Debug\AfroPower.Cliente.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\AfroPower.exe.config
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\AfroPower.exe
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\AfroPower.pdb
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\EntityFramework.dll
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\System.Data.SQLite.dll
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\EntityFramework.xml
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\bin\Debug\System.Data.SQLite.xml
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.csproj.AssemblyReference.cache
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.AdicionarHorario.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.Cliente.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.Form1.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.Properties.Resources.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaBoasVindasCliente.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaCadastro.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaHorariosAgendados.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaLogin.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaMarcarhorario.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.TelaPrincipal.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.csproj.GenerateResource.cache
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.csproj.CopyComplete
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.exe
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.pdb

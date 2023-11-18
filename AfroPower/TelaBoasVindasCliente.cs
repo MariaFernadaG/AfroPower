@@ -16,5 +16,12 @@ namespace AfroPower
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal(); 
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }

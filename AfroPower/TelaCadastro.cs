@@ -34,7 +34,14 @@ namespace AfroPower
                 Banco.NovoUsuario(usuario); 
             }
 
+            TelaPrincipal principal = new TelaPrincipal();  
+            principal.Close();
+            this.Close();
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -178,6 +178,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Tela Inicial.png" />
+    <None Include="Resources\ImagemTelaBoasVindas.png" />
+    <None Include="Resources\ObrigadoTelaBV.png" />
+    <None Include="Resources\BotaoEntrar.png" />
+    <None Include="Resources\BotaoCadastro.png" />
     <Content Include="Resources\Tela de Cadastro %283%29.jpg" />
     <None Include="Resources\Tela de Cadastro.jpg" />
     <None Include="Resources\Tela de Login1.jpg" />

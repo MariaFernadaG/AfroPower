@@ -63,9 +63,49 @@ namespace AfroPower.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BotaoCadastro {
+            get {
+                object obj = ResourceManager.GetObject("BotaoCadastro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoEntrar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoEntrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_10_30_104800 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-10-30 104800", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagemTelaBoasVindas {
+            get {
+                object obj = ResourceManager.GetObject("ImagemTelaBoasVindas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ObrigadoTelaBV {
+            get {
+                object obj = ResourceManager.GetObject("ObrigadoTelaBV", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

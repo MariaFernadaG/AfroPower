@@ -49,6 +49,7 @@ namespace AfroPower
             {
                 MessageBox.Show("Usuário ou senha inválidos");
             }
+            this.Close();
         }
     }
 }
