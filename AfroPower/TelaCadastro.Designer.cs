@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastro));
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.txt_Email = new System.Windows.Forms.TextBox();
-            this.txt_Data = new System.Windows.Forms.TextBox();
             this.cb_Nivel = new System.Windows.Forms.ComboBox();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.btn_Cadastrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.maskedData = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +43,10 @@
             // 
             this.txt_senha.BackColor = System.Drawing.Color.Tan;
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_senha.Location = new System.Drawing.Point(493, 336);
-            this.txt_senha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_senha.Location = new System.Drawing.Point(657, 414);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(146, 13);
+            this.txt_senha.Size = new System.Drawing.Size(195, 15);
             this.txt_senha.TabIndex = 2;
             this.txt_senha.UseSystemPasswordChar = true;
             // 
@@ -54,21 +54,11 @@
             // 
             this.txt_Email.BackColor = System.Drawing.Color.Tan;
             this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Email.Location = new System.Drawing.Point(484, 275);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Email.Location = new System.Drawing.Point(645, 338);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(146, 13);
+            this.txt_Email.Size = new System.Drawing.Size(195, 15);
             this.txt_Email.TabIndex = 3;
-            // 
-            // txt_Data
-            // 
-            this.txt_Data.BackColor = System.Drawing.Color.Tan;
-            this.txt_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Data.Location = new System.Drawing.Point(541, 404);
-            this.txt_Data.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_Data.Name = "txt_Data";
-            this.txt_Data.Size = new System.Drawing.Size(98, 13);
-            this.txt_Data.TabIndex = 4;
             // 
             // cb_Nivel
             // 
@@ -78,21 +68,21 @@
             this.cb_Nivel.Items.AddRange(new object[] {
             "Cliente ",
             "Trancista"});
-            this.cb_Nivel.Location = new System.Drawing.Point(459, 449);
-            this.cb_Nivel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_Nivel.Location = new System.Drawing.Point(612, 553);
+            this.cb_Nivel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_Nivel.Name = "cb_Nivel";
-            this.cb_Nivel.Size = new System.Drawing.Size(149, 21);
+            this.cb_Nivel.Size = new System.Drawing.Size(197, 24);
             this.cb_Nivel.TabIndex = 5;
             // 
             // txt_nome
             // 
             this.txt_nome.BackColor = System.Drawing.Color.Tan;
             this.txt_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_nome.Location = new System.Drawing.Point(493, 206);
-            this.txt_nome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nome.Location = new System.Drawing.Point(657, 254);
+            this.txt_nome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nome.MaxLength = 32769;
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(146, 13);
+            this.txt_nome.Size = new System.Drawing.Size(195, 15);
             this.txt_nome.TabIndex = 6;
             // 
             // btn_Cadastrar
@@ -105,10 +95,10 @@
             this.btn_Cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Cadastrar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Cadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cadastrar.Image")));
-            this.btn_Cadastrar.Location = new System.Drawing.Point(445, 498);
-            this.btn_Cadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cadastrar.Location = new System.Drawing.Point(593, 613);
+            this.btn_Cadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cadastrar.Name = "btn_Cadastrar";
-            this.btn_Cadastrar.Size = new System.Drawing.Size(194, 32);
+            this.btn_Cadastrar.Size = new System.Drawing.Size(259, 39);
             this.btn_Cadastrar.TabIndex = 1;
             this.btn_Cadastrar.UseCompatibleTextRendering = true;
             this.btn_Cadastrar.UseVisualStyleBackColor = false;
@@ -121,28 +111,39 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::AfroPower.Properties.Resources.Tela_de_Cadastro__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, -24);
+            this.pictureBox1.Location = new System.Drawing.Point(-9, -30);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1088, 609);
+            this.pictureBox1.Size = new System.Drawing.Size(1451, 750);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // maskedData
+            // 
+            this.maskedData.BackColor = System.Drawing.Color.Tan;
+            this.maskedData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedData.Location = new System.Drawing.Point(735, 497);
+            this.maskedData.Mask = "00/00/0000";
+            this.maskedData.Name = "maskedData";
+            this.maskedData.Size = new System.Drawing.Size(100, 15);
+            this.maskedData.TabIndex = 7;
+            this.maskedData.ValidatingType = typeof(System.DateTime);
+            // 
             // TelaCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 571);
+            this.ClientSize = new System.Drawing.Size(1371, 703);
+            this.Controls.Add(this.maskedData);
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.cb_Nivel);
-            this.Controls.Add(this.txt_Data);
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.btn_Cadastrar);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastro";
@@ -158,8 +159,8 @@
         private System.Windows.Forms.Button btn_Cadastrar;
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.TextBox txt_Email;
-        private System.Windows.Forms.TextBox txt_Data;
         private System.Windows.Forms.ComboBox cb_Nivel;
         public System.Windows.Forms.TextBox txt_nome;
+        private System.Windows.Forms.MaskedTextBox maskedData;
     }
 }

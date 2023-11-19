@@ -150,11 +150,12 @@ namespace AfroPower
             string obervacao = txt_Obeservacao.Text;
             string nomeUsuario = txt_NomeCliente.Text;
 
-           
+            if (!string.IsNullOrEmpty(textBoxValor.Text))
+            {
                 string queryVerificar = "SELECT T_STATUS FROM Tb_AdicionarHorario WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
-            string statusExistente = Banco.consulta(queryVerificar).Rows.Count > 0
-                ? Banco.consulta(queryVerificar).Rows[0]["T_STATUS"].ToString()
-                : "";
+                string statusExistente = Banco.consulta(queryVerificar).Rows.Count > 0
+                    ? Banco.consulta(queryVerificar).Rows[0]["T_STATUS"].ToString()
+                    : "";
 
                 if (statusExistente == "Indisponível")
                 {
@@ -174,7 +175,14 @@ namespace AfroPower
 
 
                     }
-                
+
+
+                }
+            }
+            else
+            {
+                // Se o campo de valor estiver vazio, exibe uma mensagem para preenchê-lo
+                MessageBox.Show("Por favor, preencha o campo de valor para agendar.");
             }
         }
 
