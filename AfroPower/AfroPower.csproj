@@ -71,6 +71,12 @@
     <Compile Include="AdicionarHorario.Designer.cs">
       <DependentUpon>AdicionarHorario.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdiocionarFeedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdiocionarFeedbacks.Designer.cs">
+      <DependentUpon>AdiocionarFeedbacks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agendamentos.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="Cliente.cs">
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DicasDeCuidado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DicasDeCuidado.Designer.cs">
+      <DependentUpon>DicasDeCuidado.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -125,11 +137,23 @@
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <Compile Include="VerFeedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerFeedbacks.Designer.cs">
+      <DependentUpon>VerFeedbacks.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdicionarHorario.resx">
       <DependentUpon>AdicionarHorario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdiocionarFeedbacks.resx">
+      <DependentUpon>AdiocionarFeedbacks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DicasDeCuidado.resx">
+      <DependentUpon>DicasDeCuidado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -161,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerFeedbacks.resx">
+      <DependentUpon>VerFeedbacks.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -149,30 +150,30 @@ namespace AfroPower
             string obervacao = txt_Obeservacao.Text;
             string nomeUsuario = txt_NomeCliente.Text;
 
-            
-            string queryVerificar = "SELECT T_STATUS FROM Tb_AdicionarHorario WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
+           
+                string queryVerificar = "SELECT T_STATUS FROM Tb_AdicionarHorario WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
             string statusExistente = Banco.consulta(queryVerificar).Rows.Count > 0
                 ? Banco.consulta(queryVerificar).Rows[0]["T_STATUS"].ToString()
                 : "";
 
-            if (statusExistente == "Indisponível")
-            {
-                MessageBox.Show("Horário indisponível. Escolha outro horário.");
-            }
-            else
-            {
-               
-                DialogResult res = MessageBox.Show($"Prezado(a), {Globais.nome}, seu agendamento está confirmado para o dia {data} às {horario}, com o(a) trancista {funcionario}.Agradecemos por confiar em nós para cuidar de sua beleza!", "Confirmar Agendamento", MessageBoxButtons.YesNo);
-                if (res == DialogResult.Yes)
+                if (statusExistente == "Indisponível")
                 {
-                    string vquery = "UPDATE Tb_AdicionarHorario SET T_STATUS = 'Indisponível', T_SERVICO = '" + servico + "', T_ADICIONAL = '" + adicional + "', N_VALORTOTAL = '" + valor + "', T_OBESERVACAOCLIENTE = '" + obervacao + "', T_NOMECLIENTE = '" + nomeUsuario + "' WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
-                    Banco.dml(vquery);
-
-                   
-                    CarregarDadosDoDataGridView();
-
-
+                    MessageBox.Show("Horário indisponível. Escolha outro horário.");
                 }
+                else
+                {
+
+                    DialogResult res = MessageBox.Show($"Prezado(a), {Globais.nome}, seu agendamento está confirmado para o dia {data} às {horario}, com o(a) trancista {funcionario}.Agradecemos por confiar em nós para cuidar de sua beleza!", "Confirmar Agendamento", MessageBoxButtons.YesNo);
+                    if (res == DialogResult.Yes)
+                    {
+                        string vquery = "UPDATE Tb_AdicionarHorario SET T_STATUS = 'Indisponível', T_SERVICO = '" + servico + "', T_ADICIONAL = '" + adicional + "', N_VALORTOTAL = '" + valor + "', T_OBESERVACAOCLIENTE = '" + obervacao + "', T_NOMECLIENTE = '" + nomeUsuario + "' WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
+                        Banco.dml(vquery);
+
+
+                        CarregarDadosDoDataGridView();
+
+
+                    }
                 
             }
         }

@@ -21,7 +21,7 @@ namespace AfroPower
         {
             TelaLogin login= new TelaLogin();
             login.Show();
-            this.Close();
+           
         }
 
       

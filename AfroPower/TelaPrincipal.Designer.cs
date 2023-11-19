@@ -37,11 +37,12 @@
             this.horáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dicasDeCuidadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.feebacksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicioneSeuFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verFeedbacksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairDaContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listPrincipal = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agendarHorárioToolStripMenuItem,
             this.trancistaToolStripMenuItem,
-            this.feebacksToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -78,15 +78,16 @@
             // agendarHorárioToolStripMenuItem1
             // 
             this.agendarHorárioToolStripMenuItem1.Name = "agendarHorárioToolStripMenuItem1";
-            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(325, 48);
+            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(358, 48);
             this.agendarHorárioToolStripMenuItem1.Text = "Agendar Horário";
             this.agendarHorárioToolStripMenuItem1.Click += new System.EventHandler(this.agendarHorárioToolStripMenuItem1_Click);
             // 
             // manutençõesToolStripMenuItem
             // 
             this.manutençõesToolStripMenuItem.Name = "manutençõesToolStripMenuItem";
-            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(325, 48);
-            this.manutençõesToolStripMenuItem.Text = "Manutenções ";
+            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(358, 48);
+            this.manutençõesToolStripMenuItem.Text = "Adicionar Feedback";
+            this.manutençõesToolStripMenuItem.Click += new System.EventHandler(this.manutençõesToolStripMenuItem_Click);
             // 
             // trancistaToolStripMenuItem
             // 
@@ -94,7 +95,8 @@
             this.adicionarHorarioToolStripMenuItem,
             this.horáriosToolStripMenuItem,
             this.clientesToolStripMenuItem,
-            this.dicasDeCuidadosToolStripMenuItem});
+            this.dicasDeCuidadosToolStripMenuItem,
+            this.verFeedbacksToolStripMenuItem});
             this.trancistaToolStripMenuItem.Font = new System.Drawing.Font("Papyrus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trancistaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(15, 15, 0, 15);
             this.trancistaToolStripMenuItem.Name = "trancistaToolStripMenuItem";
@@ -127,22 +129,14 @@
             this.dicasDeCuidadosToolStripMenuItem.Name = "dicasDeCuidadosToolStripMenuItem";
             this.dicasDeCuidadosToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
             this.dicasDeCuidadosToolStripMenuItem.Text = "Dicas de Cuidados";
+            this.dicasDeCuidadosToolStripMenuItem.Click += new System.EventHandler(this.dicasDeCuidadosToolStripMenuItem_Click);
             // 
-            // feebacksToolStripMenuItem
+            // verFeedbacksToolStripMenuItem
             // 
-            this.feebacksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adicioneSeuFeedbackToolStripMenuItem});
-            this.feebacksToolStripMenuItem.Font = new System.Drawing.Font("Papyrus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feebacksToolStripMenuItem.Margin = new System.Windows.Forms.Padding(15, 15, 0, 15);
-            this.feebacksToolStripMenuItem.Name = "feebacksToolStripMenuItem";
-            this.feebacksToolStripMenuItem.Size = new System.Drawing.Size(148, 48);
-            this.feebacksToolStripMenuItem.Text = "Feebacks";
-            // 
-            // adicioneSeuFeedbackToolStripMenuItem
-            // 
-            this.adicioneSeuFeedbackToolStripMenuItem.Name = "adicioneSeuFeedbackToolStripMenuItem";
-            this.adicioneSeuFeedbackToolStripMenuItem.Size = new System.Drawing.Size(383, 48);
-            this.adicioneSeuFeedbackToolStripMenuItem.Text = "Adicione seu feedback";
+            this.verFeedbacksToolStripMenuItem.Name = "verFeedbacksToolStripMenuItem";
+            this.verFeedbacksToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.verFeedbacksToolStripMenuItem.Text = "Ver Feedbacks";
+            this.verFeedbacksToolStripMenuItem.Click += new System.EventHandler(this.verFeedbacksToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
@@ -166,12 +160,34 @@
             this.sairDaContaToolStripMenuItem.Size = new System.Drawing.Size(318, 48);
             this.sairDaContaToolStripMenuItem.Text = "Sair da conta";
             // 
+            // listPrincipal
+            // 
+            this.listPrincipal.BackColor = System.Drawing.Color.Tan;
+            this.listPrincipal.FormattingEnabled = true;
+            this.listPrincipal.ItemHeight = 16;
+            this.listPrincipal.Location = new System.Drawing.Point(223, 200);
+            this.listPrincipal.Name = "listPrincipal";
+            this.listPrincipal.Size = new System.Drawing.Size(846, 436);
+            this.listPrincipal.TabIndex = 1;
+            this.listPrincipal.SelectedIndexChanged += new System.EventHandler(this.listPrincipal_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(251, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Dicas de cuidados ";
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(1582, 1055);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listPrincipal);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -182,6 +198,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -198,12 +215,13 @@
         private System.Windows.Forms.ToolStripMenuItem trancistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionarHorarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem feebacksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adicioneSeuFeedbackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dicasDeCuidadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharProgramaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairDaContaToolStripMenuItem;
+        private System.Windows.Forms.ListBox listPrincipal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem verFeedbacksToolStripMenuItem;
     }
 }

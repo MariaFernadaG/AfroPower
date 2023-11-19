@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace AfroPower
 {
     public partial class TelaCadastro : Form
@@ -31,13 +32,16 @@ namespace AfroPower
                 usuario.senha = txt_senha.Text;
                 usuario.data = txt_Data.Text;
                 usuario.nivel = cb_Nivel.Text;
-                Banco.NovoUsuario(usuario); 
+                Banco.NovoUsuario(usuario);
+               
             }
 
             TelaPrincipal principal = new TelaPrincipal();  
             principal.Close();
             this.Close();
         }
+
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
