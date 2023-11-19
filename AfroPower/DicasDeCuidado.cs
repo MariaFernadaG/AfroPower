@@ -103,6 +103,13 @@ namespace AfroPower
         {
             DicasAtualizadas?.Invoke(this, EventArgs.Empty);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }
 

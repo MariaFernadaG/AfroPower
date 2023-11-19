@@ -64,6 +64,7 @@ namespace AfroPower
             {
                 AdicionarHorario t = new  AdicionarHorario();
                 t.Show();
+                this.Close();
             }
             else
             {
@@ -74,7 +75,8 @@ namespace AfroPower
         private void agendarHorárioToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TelaMarcarhorario marcarhorario = new TelaMarcarhorario();
-            marcarhorario.Show();   
+            marcarhorario.Show();  
+            this.Close();
         }
 
         private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,6 +85,7 @@ namespace AfroPower
             {
                TelaHorariosAgendados a = new TelaHorariosAgendados();
                a.Show();
+                this.Close();
             }
             else
             {
@@ -96,6 +99,7 @@ namespace AfroPower
             {
                 Cliente cliente = new Cliente();
                 cliente.Show();
+                this.Close();
             }
           
         }
@@ -107,6 +111,7 @@ namespace AfroPower
                 DicasDeCuidado dicas = new DicasDeCuidado();
                 dicas.DicasAtualizadas += AtualizarListBoxPrincipal; 
                 dicas.Show();
+                this.Close();
             }
         }
 
@@ -124,13 +129,27 @@ namespace AfroPower
         {
             AdiocionarFeedbacks f = new AdiocionarFeedbacks();
             f.Show();
-           
+            this.Close();
+
         }
 
         private void verFeedbacksToolStripMenuItem_Click(object sender, EventArgs e)
         {
         VerFeedbacks v = new VerFeedbacks();
         v.Show();
+            this.Close();
+        }
+
+        private void fecharProgramaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sairDaContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            this.Close();
         }
     }
 }

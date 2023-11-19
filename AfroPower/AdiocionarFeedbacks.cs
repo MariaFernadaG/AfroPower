@@ -51,5 +51,12 @@ namespace AfroPower
         {
             NovoFeedbackAdicionado?.Invoke(this, e);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -82,3 +82,6 @@ C:\Users\maria\source\repos\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.pd
 C:\Users\maria\source\repos\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.DicasDeCuidado.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.AdiocionarFeedbacks.resources
 C:\Users\maria\source\repos\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.VerFeedbacks.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.AdiocionarFeedbacks.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.DicasDeCuidado.resources
+C:\Users\Pedro Luiz\Downloads\satim\AfroPower\AfroPower\AfroPower\obj\Debug\AfroPower.VerFeedbacks.resources

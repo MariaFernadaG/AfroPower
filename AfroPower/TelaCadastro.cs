@@ -37,8 +37,8 @@ namespace AfroPower
                 usuario.data = maskedData.Text;
                 usuario.nivel = cb_Nivel.Text;
                 Banco.NovoUsuario(usuario);
-                TelaPrincipal principal = new TelaPrincipal();
-                principal.Close();
+                TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
+                telaBoasVindasCliente.Show();
                 this.Close();
 
             }
@@ -66,6 +66,13 @@ namespace AfroPower
         private void pictureBox1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            this.Close();
         }
     }
 }

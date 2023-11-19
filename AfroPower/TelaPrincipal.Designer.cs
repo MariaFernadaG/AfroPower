@@ -59,7 +59,8 @@
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(170, 1055);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(129, 640);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,24 +69,24 @@
             this.agendarHorárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agendarHorárioToolStripMenuItem1,
             this.manutençõesToolStripMenuItem});
-            this.agendarHorárioToolStripMenuItem.Font = new System.Drawing.Font("Papyrus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agendarHorárioToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agendarHorárioToolStripMenuItem.Margin = new System.Windows.Forms.Padding(15, 15, 0, 15);
             this.agendarHorárioToolStripMenuItem.Name = "agendarHorárioToolStripMenuItem";
-            this.agendarHorárioToolStripMenuItem.Size = new System.Drawing.Size(148, 48);
+            this.agendarHorárioToolStripMenuItem.Size = new System.Drawing.Size(109, 30);
             this.agendarHorárioToolStripMenuItem.Text = "Cliente ";
             this.agendarHorárioToolStripMenuItem.Click += new System.EventHandler(this.agendarHorárioToolStripMenuItem_Click);
             // 
             // agendarHorárioToolStripMenuItem1
             // 
             this.agendarHorárioToolStripMenuItem1.Name = "agendarHorárioToolStripMenuItem1";
-            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(358, 48);
+            this.agendarHorárioToolStripMenuItem1.Size = new System.Drawing.Size(276, 30);
             this.agendarHorárioToolStripMenuItem1.Text = "Agendar Horário";
             this.agendarHorárioToolStripMenuItem1.Click += new System.EventHandler(this.agendarHorárioToolStripMenuItem1_Click);
             // 
             // manutençõesToolStripMenuItem
             // 
             this.manutençõesToolStripMenuItem.Name = "manutençõesToolStripMenuItem";
-            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(358, 48);
+            this.manutençõesToolStripMenuItem.Size = new System.Drawing.Size(276, 30);
             this.manutençõesToolStripMenuItem.Text = "Adicionar Feedback";
             this.manutençõesToolStripMenuItem.Click += new System.EventHandler(this.manutençõesToolStripMenuItem_Click);
             // 
@@ -97,44 +98,44 @@
             this.clientesToolStripMenuItem,
             this.dicasDeCuidadosToolStripMenuItem,
             this.verFeedbacksToolStripMenuItem});
-            this.trancistaToolStripMenuItem.Font = new System.Drawing.Font("Papyrus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trancistaToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trancistaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(15, 15, 0, 15);
             this.trancistaToolStripMenuItem.Name = "trancistaToolStripMenuItem";
-            this.trancistaToolStripMenuItem.Size = new System.Drawing.Size(148, 48);
+            this.trancistaToolStripMenuItem.Size = new System.Drawing.Size(109, 30);
             this.trancistaToolStripMenuItem.Text = "Trancista";
             // 
             // adicionarHorarioToolStripMenuItem
             // 
             this.adicionarHorarioToolStripMenuItem.Name = "adicionarHorarioToolStripMenuItem";
-            this.adicionarHorarioToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.adicionarHorarioToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.adicionarHorarioToolStripMenuItem.Text = "Adicionar horario";
             this.adicionarHorarioToolStripMenuItem.Click += new System.EventHandler(this.adicionarHorarioToolStripMenuItem_Click);
             // 
             // horáriosToolStripMenuItem
             // 
             this.horáriosToolStripMenuItem.Name = "horáriosToolStripMenuItem";
-            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.horáriosToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.horáriosToolStripMenuItem.Text = "Horários Agendados";
             this.horáriosToolStripMenuItem.Click += new System.EventHandler(this.horáriosToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // dicasDeCuidadosToolStripMenuItem
             // 
             this.dicasDeCuidadosToolStripMenuItem.Name = "dicasDeCuidadosToolStripMenuItem";
-            this.dicasDeCuidadosToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.dicasDeCuidadosToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.dicasDeCuidadosToolStripMenuItem.Text = "Dicas de Cuidados";
             this.dicasDeCuidadosToolStripMenuItem.Click += new System.EventHandler(this.dicasDeCuidadosToolStripMenuItem_Click);
             // 
             // verFeedbacksToolStripMenuItem
             // 
             this.verFeedbacksToolStripMenuItem.Name = "verFeedbacksToolStripMenuItem";
-            this.verFeedbacksToolStripMenuItem.Size = new System.Drawing.Size(369, 48);
+            this.verFeedbacksToolStripMenuItem.Size = new System.Drawing.Size(282, 30);
             this.verFeedbacksToolStripMenuItem.Text = "Ver Feedbacks";
             this.verFeedbacksToolStripMenuItem.Click += new System.EventHandler(this.verFeedbacksToolStripMenuItem_Click);
             // 
@@ -143,55 +144,59 @@
             this.logOutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fecharProgramaToolStripMenuItem,
             this.sairDaContaToolStripMenuItem});
-            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Papyrus", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(163, 48);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(124, 30);
             this.logOutToolStripMenuItem.Text = "Log Out";
             // 
             // fecharProgramaToolStripMenuItem
             // 
             this.fecharProgramaToolStripMenuItem.Name = "fecharProgramaToolStripMenuItem";
-            this.fecharProgramaToolStripMenuItem.Size = new System.Drawing.Size(318, 48);
+            this.fecharProgramaToolStripMenuItem.Size = new System.Drawing.Size(253, 30);
             this.fecharProgramaToolStripMenuItem.Text = "Fechar Programa";
+            this.fecharProgramaToolStripMenuItem.Click += new System.EventHandler(this.fecharProgramaToolStripMenuItem_Click);
             // 
             // sairDaContaToolStripMenuItem
             // 
             this.sairDaContaToolStripMenuItem.Name = "sairDaContaToolStripMenuItem";
-            this.sairDaContaToolStripMenuItem.Size = new System.Drawing.Size(318, 48);
+            this.sairDaContaToolStripMenuItem.Size = new System.Drawing.Size(253, 30);
             this.sairDaContaToolStripMenuItem.Text = "Sair da conta";
+            this.sairDaContaToolStripMenuItem.Click += new System.EventHandler(this.sairDaContaToolStripMenuItem_Click);
             // 
             // listPrincipal
             // 
             this.listPrincipal.BackColor = System.Drawing.Color.Tan;
             this.listPrincipal.FormattingEnabled = true;
-            this.listPrincipal.ItemHeight = 16;
-            this.listPrincipal.Location = new System.Drawing.Point(223, 200);
+            this.listPrincipal.Location = new System.Drawing.Point(167, 162);
+            this.listPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.listPrincipal.Name = "listPrincipal";
-            this.listPrincipal.Size = new System.Drawing.Size(846, 436);
+            this.listPrincipal.Size = new System.Drawing.Size(636, 355);
             this.listPrincipal.TabIndex = 1;
             this.listPrincipal.SelectedIndexChanged += new System.EventHandler(this.listPrincipal_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(251, 112);
+            this.label1.Location = new System.Drawing.Point(188, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 16);
+            this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Dicas de cuidados ";
             // 
             // TelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1582, 1055);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listPrincipal);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TelaPrincipal";

@@ -42,14 +42,22 @@ namespace AfroPower
             {
                 Globais.nome= dt.Rows[0].Field<string>("N_NOMEUSUARIO");
                 Globais.nivel = dt.Rows[0].Field<string>("N_NIVEL");
-                TelaPrincipal principal = new TelaPrincipal();
-                principal.Show();
+                TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
+                telaBoasVindasCliente.Show();
             }
             else
             {
                 MessageBox.Show("Usuário ou senha inválidos");
             }
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();  
+            form1.ShowDialog();
+            this.Close();
+
         }
     }
 }

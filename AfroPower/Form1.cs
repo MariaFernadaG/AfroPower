@@ -21,7 +21,7 @@ namespace AfroPower
         {
             TelaLogin login= new TelaLogin();
             login.Show();
-           
+            this.Hide();
         }
 
       
@@ -30,6 +30,12 @@ namespace AfroPower
         {
          TelaCadastro cad = new TelaCadastro();
           cad.Show();
+          this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
