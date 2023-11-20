@@ -36,19 +36,19 @@
             // button1
             // 
             this.button1.Image = global::AfroPower.Properties.Resources.ObrigadoTelaBV;
-            this.button1.Location = new System.Drawing.Point(282, 690);
+            this.button1.Location = new System.Drawing.Point(194, 553);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(323, 86);
+            this.button1.Size = new System.Drawing.Size(248, 66);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AfroPower.Properties.Resources.ImagemTelaBoasVindas;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -104);
+            this.pictureBox1.Image = global::AfroPower.Properties.Resources.TelaBoasVindasP;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(892, 941);
+            this.pictureBox1.Size = new System.Drawing.Size(627, 661);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 788);
+            this.ClientSize = new System.Drawing.Size(626, 643);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

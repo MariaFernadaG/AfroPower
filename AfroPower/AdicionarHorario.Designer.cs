@@ -28,16 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_horarios = new System.Windows.Forms.DataGridView();
             this.txt_Funcionario = new System.Windows.Forms.TextBox();
-            this.btn_salvar = new System.Windows.Forms.Button();
-            this.btn_Excluir = new System.Windows.Forms.Button();
             this.msk_horario = new System.Windows.Forms.MaskedTextBox();
             this.msk_Data = new System.Windows.Forms.MaskedTextBox();
             this.tb_idhorarios = new System.Windows.Forms.TextBox();
-            this.bt_Limpar = new System.Windows.Forms.Button();
             this.txt_Status = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,6 +42,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_Limpar = new System.Windows.Forms.Button();
+            this.btn_Excluir = new System.Windows.Forms.Button();
+            this.btn_salvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_horarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,26 +58,26 @@
             this.dgv_horarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgv_horarios.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgv_horarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Tan;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_horarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_horarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_horarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_horarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Tan;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_horarios.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_horarios.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_horarios.EnableHeadersVisualStyles = false;
-            this.dgv_horarios.Location = new System.Drawing.Point(95, 291);
+            this.dgv_horarios.Location = new System.Drawing.Point(176, 297);
             this.dgv_horarios.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_horarios.MultiSelect = false;
             this.dgv_horarios.Name = "dgv_horarios";
@@ -93,42 +93,16 @@
             // txt_Funcionario
             // 
             this.txt_Funcionario.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Funcionario.Location = new System.Drawing.Point(324, 99);
+            this.txt_Funcionario.Location = new System.Drawing.Point(405, 105);
             this.txt_Funcionario.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Funcionario.Name = "txt_Funcionario";
             this.txt_Funcionario.Size = new System.Drawing.Size(76, 20);
             this.txt_Funcionario.TabIndex = 2;
             // 
-            // btn_salvar
-            // 
-            this.btn_salvar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_salvar.Location = new System.Drawing.Point(243, 230);
-            this.btn_salvar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_salvar.Name = "btn_salvar";
-            this.btn_salvar.Size = new System.Drawing.Size(144, 43);
-            this.btn_salvar.TabIndex = 3;
-            this.btn_salvar.Text = "Salvar";
-            this.btn_salvar.UseVisualStyleBackColor = false;
-            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
-            // 
-            // btn_Excluir
-            // 
-            this.btn_Excluir.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Excluir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btn_Excluir.Location = new System.Drawing.Point(434, 230);
-            this.btn_Excluir.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Excluir.Name = "btn_Excluir";
-            this.btn_Excluir.Size = new System.Drawing.Size(141, 43);
-            this.btn_Excluir.TabIndex = 5;
-            this.btn_Excluir.Text = "Excluir";
-            this.btn_Excluir.UseVisualStyleBackColor = false;
-            this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
-            // 
             // msk_horario
             // 
             this.msk_horario.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.msk_horario.Location = new System.Drawing.Point(454, 164);
+            this.msk_horario.Location = new System.Drawing.Point(535, 170);
             this.msk_horario.Margin = new System.Windows.Forms.Padding(2);
             this.msk_horario.Mask = "00:00";
             this.msk_horario.Name = "msk_horario";
@@ -139,7 +113,7 @@
             // msk_Data
             // 
             this.msk_Data.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.msk_Data.Location = new System.Drawing.Point(288, 164);
+            this.msk_Data.Location = new System.Drawing.Point(369, 170);
             this.msk_Data.Margin = new System.Windows.Forms.Padding(2);
             this.msk_Data.Mask = "00/00/0000";
             this.msk_Data.Name = "msk_Data";
@@ -151,28 +125,16 @@
             // 
             this.tb_idhorarios.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tb_idhorarios.Enabled = false;
-            this.tb_idhorarios.Location = new System.Drawing.Point(288, 99);
+            this.tb_idhorarios.Location = new System.Drawing.Point(369, 105);
             this.tb_idhorarios.Margin = new System.Windows.Forms.Padding(2);
             this.tb_idhorarios.Name = "tb_idhorarios";
             this.tb_idhorarios.Size = new System.Drawing.Size(18, 20);
             this.tb_idhorarios.TabIndex = 8;
             // 
-            // bt_Limpar
-            // 
-            this.bt_Limpar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_Limpar.Location = new System.Drawing.Point(626, 230);
-            this.bt_Limpar.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_Limpar.Name = "bt_Limpar";
-            this.bt_Limpar.Size = new System.Drawing.Size(141, 43);
-            this.bt_Limpar.TabIndex = 9;
-            this.bt_Limpar.Text = "Limpar";
-            this.bt_Limpar.UseVisualStyleBackColor = false;
-            this.bt_Limpar.Click += new System.EventHandler(this.bt_Limpar_Click);
-            // 
             // txt_Status
             // 
             this.txt_Status.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_Status.Location = new System.Drawing.Point(639, 164);
+            this.txt_Status.Location = new System.Drawing.Point(720, 170);
             this.txt_Status.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Status.Name = "txt_Status";
             this.txt_Status.Size = new System.Drawing.Size(76, 20);
@@ -193,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(285, 73);
+            this.label1.Location = new System.Drawing.Point(366, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
@@ -203,7 +165,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(285, 138);
+            this.label3.Location = new System.Drawing.Point(366, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
@@ -213,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(451, 138);
+            this.label4.Location = new System.Drawing.Point(532, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
@@ -223,7 +185,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(636, 138);
+            this.label5.Location = new System.Drawing.Point(717, 144);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
@@ -234,20 +196,61 @@
             // 
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(937, 12);
+            this.button1.Image = global::AfroPower.Properties.Resources.BotaoVoltar;
+            this.button1.Location = new System.Drawing.Point(1100, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 18;
-            this.button1.Text = "VOLTAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // bt_Limpar
+            // 
+            this.bt_Limpar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_Limpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Limpar.Image = global::AfroPower.Properties.Resources.BotaoLimpar;
+            this.bt_Limpar.Location = new System.Drawing.Point(707, 228);
+            this.bt_Limpar.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Limpar.Name = "bt_Limpar";
+            this.bt_Limpar.Size = new System.Drawing.Size(188, 65);
+            this.bt_Limpar.TabIndex = 9;
+            this.bt_Limpar.UseVisualStyleBackColor = false;
+            this.bt_Limpar.Click += new System.EventHandler(this.bt_Limpar_Click);
+            // 
+            // btn_Excluir
+            // 
+            this.btn_Excluir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Excluir.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btn_Excluir.Image = global::AfroPower.Properties.Resources.BotaoExcluir;
+            this.btn_Excluir.Location = new System.Drawing.Point(515, 228);
+            this.btn_Excluir.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Excluir.Name = "btn_Excluir";
+            this.btn_Excluir.Size = new System.Drawing.Size(177, 65);
+            this.btn_Excluir.TabIndex = 5;
+            this.btn_Excluir.UseVisualStyleBackColor = false;
+            this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
+            // 
+            // btn_salvar
+            // 
+            this.btn_salvar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salvar.Image = global::AfroPower.Properties.Resources.BotaoSalvar;
+            this.btn_salvar.Location = new System.Drawing.Point(324, 228);
+            this.btn_salvar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_salvar.Name = "btn_salvar";
+            this.btn_salvar.Size = new System.Drawing.Size(171, 65);
+            this.btn_salvar.TabIndex = 3;
+            this.btn_salvar.UseVisualStyleBackColor = false;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
             // AdicionarHorario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1024, 601);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

@@ -60,7 +60,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(129, 640);
+            this.menuStrip1.Size = new System.Drawing.Size(129, 600);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -166,21 +166,23 @@
             // listPrincipal
             // 
             this.listPrincipal.BackColor = System.Drawing.Color.Tan;
+            this.listPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listPrincipal.FormattingEnabled = true;
-            this.listPrincipal.Location = new System.Drawing.Point(167, 162);
+            this.listPrincipal.Location = new System.Drawing.Point(322, 122);
             this.listPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.listPrincipal.Name = "listPrincipal";
-            this.listPrincipal.Size = new System.Drawing.Size(636, 355);
+            this.listPrincipal.Size = new System.Drawing.Size(636, 351);
             this.listPrincipal.TabIndex = 1;
             this.listPrincipal.SelectedIndexChanged += new System.EventHandler(this.listPrincipal_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 91);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(432, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.Size = new System.Drawing.Size(430, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "Dicas de cuidados ";
             // 
@@ -189,7 +191,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listPrincipal);
             this.Controls.Add(this.menuStrip1);

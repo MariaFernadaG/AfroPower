@@ -29,12 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_Cadas = new System.Windows.Forms.Button();
             this.btn_Login = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::AfroPower.Properties.Resources.BotaoSair;
+            this.button1.Location = new System.Drawing.Point(961, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 40);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "s";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_Cadas
             // 
@@ -42,7 +55,7 @@
             this.btn_Cadas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Cadas.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Cadas.Image = global::AfroPower.Properties.Resources.BotaoCadastro;
-            this.btn_Cadas.Location = new System.Drawing.Point(549, 396);
+            this.btn_Cadas.Location = new System.Drawing.Point(614, 421);
             this.btn_Cadas.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Cadas.Name = "btn_Cadas";
             this.btn_Cadas.Size = new System.Drawing.Size(262, 64);
@@ -57,10 +70,10 @@
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Login.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Login.Image = global::AfroPower.Properties.Resources.BotaoEntrar;
-            this.btn_Login.Location = new System.Drawing.Point(312, 396);
+            this.btn_Login.Location = new System.Drawing.Point(347, 421);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(217, 64);
+            this.btn_Login.Size = new System.Drawing.Size(240, 64);
             this.btn_Login.TabIndex = 0;
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.button1_Click);
@@ -71,22 +84,10 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1080, 575);
+            this.pictureBox1.Size = new System.Drawing.Size(1200, 600);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(972, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "SAIR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 

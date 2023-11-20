@@ -118,28 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ImagemTelaBoasVindas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagemTelaBoasVindas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoVoltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoVoltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoEnviart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoEnviart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoSalvar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoSalvar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BotaoEntrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotaoEntrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tela de Cadastro (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tela de Cadastro (3)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tela de Cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tela de Cadastro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de tela 2023-10-30 104800" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-10-30 104800.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ObrigadoTelaBV" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ObrigadoTelaBV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tela de Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tela de Login1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ImagemTelaBoasVindas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ImagemTelaBoasVindas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tela de Cadastro (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tela de Cadastro (3)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoAgendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoAgendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BotaoCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BotaoCadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObrigadoTelaBV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObrigadoTelaBV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tela de Cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tela de Cadastro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoExcluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoExcluir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-10-30 104800" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-10-30 104800.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaBoasVindasP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaBoasVindasP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoSair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoSair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BotaoLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BotaoLimpar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

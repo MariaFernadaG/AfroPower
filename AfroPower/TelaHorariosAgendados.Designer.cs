@@ -42,19 +42,19 @@
             this.dgv_HorariosAgendados.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgv_HorariosAgendados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_HorariosAgendados.Location = new System.Drawing.Point(62, 177);
-            this.dgv_HorariosAgendados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_HorariosAgendados.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_HorariosAgendados.Name = "dgv_HorariosAgendados";
             this.dgv_HorariosAgendados.ReadOnly = true;
             this.dgv_HorariosAgendados.RowHeadersWidth = 51;
             this.dgv_HorariosAgendados.RowTemplate.Height = 24;
-            this.dgv_HorariosAgendados.Size = new System.Drawing.Size(1068, 508);
+            this.dgv_HorariosAgendados.Size = new System.Drawing.Size(946, 359);
             this.dgv_HorariosAgendados.TabIndex = 0;
             // 
             // Horários
             // 
             this.Horários.AutoSize = true;
             this.Horários.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Horários.Location = new System.Drawing.Point(178, 33);
+            this.Horários.Location = new System.Drawing.Point(232, 12);
             this.Horários.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Horários.Name = "Horários";
             this.Horários.Size = new System.Drawing.Size(618, 73);
@@ -74,11 +74,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1203, 33);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::AfroPower.Properties.Resources.BotaoVoltar;
+            this.button1.Location = new System.Drawing.Point(1113, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "VOLTAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -87,13 +88,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Horários);
             this.Controls.Add(this.dgv_HorariosAgendados);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TelaHorariosAgendados";

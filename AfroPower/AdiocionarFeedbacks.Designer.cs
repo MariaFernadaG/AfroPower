@@ -48,12 +48,12 @@
             // 
             this.bnt_Adcionar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bnt_Adcionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_Adcionar.Location = new System.Drawing.Point(925, 433);
+            this.bnt_Adcionar.Image = global::AfroPower.Properties.Resources.BotaoEnviart;
+            this.bnt_Adcionar.Location = new System.Drawing.Point(906, 443);
             this.bnt_Adcionar.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Adcionar.Name = "bnt_Adcionar";
-            this.bnt_Adcionar.Size = new System.Drawing.Size(94, 60);
+            this.bnt_Adcionar.Size = new System.Drawing.Size(113, 50);
             this.bnt_Adcionar.TabIndex = 1;
-            this.bnt_Adcionar.Text = "button1";
             this.bnt_Adcionar.UseVisualStyleBackColor = false;
             this.bnt_Adcionar.Click += new System.EventHandler(this.bnt_Adcionar_Click);
             // 
@@ -71,11 +71,11 @@
             // 
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::AfroPower.Properties.Resources.BotaoVoltar;
             this.button1.Location = new System.Drawing.Point(1086, 22);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "VOLTAR";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -84,7 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bnt_Adcionar);

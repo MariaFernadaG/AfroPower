@@ -63,6 +63,16 @@ namespace AfroPower.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BotaoAgendar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoAgendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BotaoCadastro {
             get {
                 object obj = ResourceManager.GetObject("BotaoCadastro", resourceCulture);
@@ -73,9 +83,79 @@ namespace AfroPower.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BotaoCancelar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoCancelar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BotaoEntrar {
             get {
                 object obj = ResourceManager.GetObject("BotaoEntrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoEnviart {
+            get {
+                object obj = ResourceManager.GetObject("BotaoEnviart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoExcluir {
+            get {
+                object obj = ResourceManager.GetObject("BotaoExcluir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoLimpar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoLimpar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoSair {
+            get {
+                object obj = ResourceManager.GetObject("BotaoSair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoSalvar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoSalvar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoVoltar {
+            get {
+                object obj = ResourceManager.GetObject("BotaoVoltar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +216,16 @@ namespace AfroPower.Properties {
         internal static System.Drawing.Bitmap Tela_de_Login {
             get {
                 object obj = ResourceManager.GetObject("Tela de Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaBoasVindasP {
+            get {
+                object obj = ResourceManager.GetObject("TelaBoasVindasP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
