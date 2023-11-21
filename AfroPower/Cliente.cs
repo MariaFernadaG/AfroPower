@@ -29,8 +29,8 @@ namespace AfroPower
                     N_IDUSUARIO as 'ID',
                     N_NOMEUSUARIO as 'Usuarios',
                     N_EMAILUSUARIO as 'Email',
-                    N_NIVEL as 'Nivel',
-                    N_NUMERO as 'Vindas'
+                    N_NIVEL as 'Nivel'
+                   
                 FROM 
                   tb_Usuarios                      
             ";

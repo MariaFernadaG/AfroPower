@@ -15,8 +15,8 @@ namespace AfroPower
 
         private static SQLiteConnection ConexaoBanco()
         {
-             conexao = new SQLiteConnection("Data Source = C:\\Users\\Pedro Luiz\\Downloads\\satim\\AfroPower\\AfroPower\\BancoDeDados\\Banco.db");
-            
+            //conexao = new SQLiteConnection("Data Source = C:\\Users\\Pedro Luiz\\Downloads\\satim\\AfroPower\\AfroPower\\BancoDeDados\\Banco.db");
+            conexao = new SQLiteConnection("Data Source = C:\\Users\\maria\\source\\repos\\AfroPower\\AfroPower\\BancoDeDados\\Banco.db");
             conexao.Open();
             return conexao;
         }
@@ -120,7 +120,7 @@ namespace AfroPower
 
             if (ExisteUsername(u))
             {
-                MessageBox.Show("Username ja existe");
+                MessageBox.Show("Email já cadastrado");
                 return;
             }
             try

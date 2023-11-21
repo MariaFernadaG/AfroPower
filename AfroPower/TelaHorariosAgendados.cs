@@ -28,14 +28,7 @@ namespace AfroPower
             // Adicionar um manipulador de eventos para lidar com a mudança de valor
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             //botao presença
-            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-            buttonColumn.HeaderText = "Ação";
-            buttonColumn.Text = "Cliente Veio";
-            buttonColumn.UseColumnTextForButtonValue = true;
-            dgv_HorariosAgendados.Columns.Add(buttonColumn);
-
-            // Manipulador de evento para o clique no botão na grade de dados
-            dgv_HorariosAgendados.CellContentClick += DataGridViewButtonClicked;
+           
 
 
         }

@@ -69,7 +69,7 @@ namespace AfroPower
             }
             else
             {
-                MessageBox.Show("Usuario nao permitido");
+                MessageBox.Show("Acesso não permitido");
             }
         }
 
@@ -90,7 +90,7 @@ namespace AfroPower
             }
             else
             {
-                MessageBox.Show("Usuario nao permitido");
+                MessageBox.Show("Acesso não permitido");
             }
         }
 
@@ -128,6 +128,7 @@ namespace AfroPower
 
         private void manutençõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             AdiocionarFeedbacks f = new AdiocionarFeedbacks();
             f.Show();
             this.Close();
@@ -136,9 +137,13 @@ namespace AfroPower
 
         private void verFeedbacksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        VerFeedbacks v = new VerFeedbacks();
-        v.Show();
-            this.Close();
+
+            if (Globais.nivel == trancistaToolStripMenuItem.Text)
+            {
+                VerFeedbacks v = new VerFeedbacks();
+                v.Show();
+                this.Close();
+            }
         }
 
         private void fecharProgramaToolStripMenuItem_Click(object sender, EventArgs e)

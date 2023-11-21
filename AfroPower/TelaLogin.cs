@@ -42,8 +42,10 @@ namespace AfroPower
             {
                 Globais.nome= dt.Rows[0].Field<string>("N_NOMEUSUARIO");
                 Globais.nivel = dt.Rows[0].Field<string>("N_NIVEL");
-                TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
-                telaBoasVindasCliente.Show();
+                TelaPrincipal n = new TelaPrincipal();
+                n.Show();
+               /* TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
+                telaBoasVindasCliente.Show();*/
             }
             else
             {
@@ -57,6 +59,11 @@ namespace AfroPower
             Form1 form1 = new Form1();  
             form1.ShowDialog();
             this.Close();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

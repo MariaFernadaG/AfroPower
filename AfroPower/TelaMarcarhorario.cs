@@ -88,7 +88,7 @@ namespace AfroPower
                     N_IDFUNCIONARIO as 'ID',
                     T_FUNCIONARIO as 'Funcionario',
                     T_DIA as 'Dia',
-                    T_DESCRICAOHORARIO as 'Horários',
+                    T_DESCRICAOHORARIO as 'Horário',
                     T_STATUS as 'Status'
                 FROM 
                     Tb_AdicionarHorario
@@ -150,8 +150,6 @@ namespace AfroPower
             string obervacao = txt_Obeservacao.Text;
             string nomeUsuario = txt_NomeCliente.Text;
 
-            if (!string.IsNullOrEmpty(textBoxValor.Text))
-            {
                 string queryVerificar = "SELECT T_STATUS FROM Tb_AdicionarHorario WHERE T_DIA = '" + data + "' AND T_DESCRICAOHORARIO = '" + horario + "'";
                 string statusExistente = Banco.consulta(queryVerificar).Rows.Count > 0
                     ? Banco.consulta(queryVerificar).Rows[0]["T_STATUS"].ToString()
@@ -178,12 +176,7 @@ namespace AfroPower
 
 
                 }
-            }
-            else
-            {
-                // Se o campo de valor estiver vazio, exibe uma mensagem para preenchê-lo
-                MessageBox.Show("Por favor, preencha o campo de valor para agendar.");
-            }
+           
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
@@ -235,7 +228,7 @@ namespace AfroPower
                 N_IDFUNCIONARIO as 'ID',
                 T_FUNCIONARIO as 'Funcionario',
                 T_DIA as 'Dia',
-                T_DESCRICAOHORARIO as 'Horários',
+                T_DESCRICAOHORARIO as 'Horário',
                 T_STATUS as 'Status'
             FROM 
                 Tb_AdicionarHorario
