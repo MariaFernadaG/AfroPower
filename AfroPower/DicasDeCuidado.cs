@@ -1,41 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AfroPower
 {
     public partial class DicasDeCuidado : Form
     {
-        DataTable dt = new DataTable();
+        private DataTable dt = new DataTable();
+        private BindingList<string> listaDicas = new BindingList<string>();
+
         public event EventHandler DicasAtualizadas;
+
         public DicasDeCuidado()
         {
             InitializeComponent();
+            listBox1.DataSource = listaDicas;
         }
 
         private void DicasDeCuidado_Load(object sender, EventArgs e)
         {
-            AtualizarListBox(); // Chama o método para carregar os dados na inicialização do formulário
+            AtualizarListBox();
         }
 
         private void AtualizarListBox()
-        {
+        { 
             try
             {
                 DataTable dicas = Banco.consulta("SELECT T_Dicas FROM tb_Dicasdecuidado");
 
-                listBox1.Items.Clear();
+                listaDicas.Clear();
 
                 foreach (DataRow row in dicas.Rows)
                 {
                     string textoDica = row["T_Dicas"].ToString();
-                    listBox1.Items.Add(textoDica);
+                    listaDicas.Add(textoDica);
                 }
             }
             catch (Exception ex)
@@ -46,21 +45,18 @@ namespace AfroPower
 
         private void btn_Adicionar_Click(object sender, EventArgs e)
         {
-
-            string novaDica = txtNovaDica.Text.Trim(); // Obtém a nova dica do TextBox
+            string novaDica = txtNovaDica.Text.Trim();
 
             if (!string.IsNullOrEmpty(novaDica))
             {
                 try
                 {
-                    // Adiciona a nova dica ao banco de dados
-                    string insertQuery = "INSERT INTO tb_Dicasdecuidado (T_Dicas) VALUES ('" + novaDica + "')";
+                    string insertQuery = $"INSERT INTO tb_Dicasdecuidado (T_Dicas) VALUES ('{novaDica}')";
                     Banco.dml(insertQuery, "Nova dica adicionada com sucesso ao banco de dados!", "Erro ao adicionar ao banco de dados");
 
-                    // Adiciona a nova dica à listBox1
-                    listBox1.Items.Add(novaDica);
+                    AtualizarListBox();
                     OnDicasAtualizadas();
-                    txtNovaDica.Text = ""; // Limpa o TextBox após adicionar
+                    txtNovaDica.Text = "";
                 }
                 catch (Exception ex)
                 {
@@ -77,16 +73,14 @@ namespace AfroPower
         {
             if (listBox1.SelectedItem != null)
             {
-                string textoSelecionado = listBox1.SelectedItem.ToString(); // Obtém o texto do item selecionado na listBox1
+                string textoSelecionado = listBox1.SelectedItem.ToString();
 
                 try
                 {
-                    // Remove o item do banco de dados
                     string deleteQuery = $"DELETE FROM tb_Dicasdecuidado WHERE T_Dicas = '{textoSelecionado}'";
                     Banco.dml(deleteQuery, "Item removido com sucesso do banco de dados!", "Erro ao remover do banco de dados");
 
-                    // Remove o item da listBox1
-                    listBox1.Items.Remove(textoSelecionado);
+                    listaDicas.Remove(textoSelecionado);
                     OnDicasAtualizadas();
                 }
                 catch (Exception ex)
@@ -99,6 +93,7 @@ namespace AfroPower
                 MessageBox.Show("Selecione um item para excluir.");
             }
         }
+
         protected virtual void OnDicasAtualizadas()
         {
             DicasAtualizadas?.Invoke(this, EventArgs.Empty);
@@ -112,6 +107,3 @@ namespace AfroPower
         }
     }
 }
-
-
-

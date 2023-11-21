@@ -59,12 +59,12 @@
             // 
             this.btn_Excluir.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Excluir.Location = new System.Drawing.Point(468, 541);
+            this.btn_Excluir.Image = global::AfroPower.Properties.Resources.BotaoExcluir;
+            this.btn_Excluir.Location = new System.Drawing.Point(459, 535);
             this.btn_Excluir.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Excluir.Name = "btn_Excluir";
-            this.btn_Excluir.Size = new System.Drawing.Size(128, 49);
+            this.btn_Excluir.Size = new System.Drawing.Size(177, 54);
             this.btn_Excluir.TabIndex = 3;
-            this.btn_Excluir.Text = "button1";
             this.btn_Excluir.UseVisualStyleBackColor = false;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
             // 
@@ -107,6 +107,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DicasDeCuidado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DicasDeCuidado";
             this.Load += new System.EventHandler(this.DicasDeCuidado_Load);
             this.ResumeLayout(false);

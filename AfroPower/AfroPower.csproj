@@ -205,6 +205,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Tela Inicial.png" />
+    <None Include="Resources\TelaCadastroD.jpg" />
+    <None Include="Resources\TelaLoginD.jpg" />
     <None Include="Resources\TelaBoasVindasP.png" />
     <None Include="Resources\ImagemTelaBoasVindas.png" />
     <None Include="Resources\ObrigadoTelaBV.png" />

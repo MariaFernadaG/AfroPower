@@ -44,10 +44,11 @@
             // 
             this.txt_senha.BackColor = System.Drawing.Color.Tan;
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_senha.Location = new System.Drawing.Point(539, 331);
-            this.txt_senha.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_senha.Location = new System.Drawing.Point(173, 319);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(0);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(146, 13);
+            this.txt_senha.Size = new System.Drawing.Size(618, 37);
             this.txt_senha.TabIndex = 2;
             this.txt_senha.UseSystemPasswordChar = true;
             // 
@@ -55,47 +56,51 @@
             // 
             this.txt_Email.BackColor = System.Drawing.Color.Tan;
             this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Email.Location = new System.Drawing.Point(539, 267);
+            this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Email.Location = new System.Drawing.Point(173, 248);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(146, 13);
+            this.txt_Email.Size = new System.Drawing.Size(618, 37);
             this.txt_Email.TabIndex = 3;
             // 
             // cb_Nivel
             // 
             this.cb_Nivel.BackColor = System.Drawing.Color.Tan;
             this.cb_Nivel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cb_Nivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Nivel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cb_Nivel.FormattingEnabled = true;
             this.cb_Nivel.Items.AddRange(new object[] {
             "Cliente ",
             "Trancista"});
-            this.cb_Nivel.Location = new System.Drawing.Point(524, 443);
-            this.cb_Nivel.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_Nivel.Location = new System.Drawing.Point(370, 441);
+            this.cb_Nivel.Margin = new System.Windows.Forms.Padding(0);
             this.cb_Nivel.Name = "cb_Nivel";
-            this.cb_Nivel.Size = new System.Drawing.Size(149, 21);
+            this.cb_Nivel.Size = new System.Drawing.Size(235, 41);
             this.cb_Nivel.TabIndex = 5;
             // 
             // txt_nome
             // 
             this.txt_nome.BackColor = System.Drawing.Color.Tan;
             this.txt_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_nome.Location = new System.Drawing.Point(539, 203);
+            this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nome.Location = new System.Drawing.Point(173, 175);
             this.txt_nome.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nome.MaxLength = 32769;
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(146, 13);
+            this.txt_nome.Size = new System.Drawing.Size(618, 37);
             this.txt_nome.TabIndex = 6;
             // 
             // maskedData
             // 
             this.maskedData.BackColor = System.Drawing.Color.Tan;
             this.maskedData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedData.Location = new System.Drawing.Point(610, 397);
-            this.maskedData.Margin = new System.Windows.Forms.Padding(2);
+            this.maskedData.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedData.Location = new System.Drawing.Point(173, 392);
+            this.maskedData.Margin = new System.Windows.Forms.Padding(0);
             this.maskedData.Mask = "00/00/0000";
             this.maskedData.Name = "maskedData";
-            this.maskedData.Size = new System.Drawing.Size(75, 13);
+            this.maskedData.Size = new System.Drawing.Size(618, 37);
             this.maskedData.TabIndex = 7;
             this.maskedData.ValidatingType = typeof(System.DateTime);
             // 
@@ -121,7 +126,7 @@
             this.btn_Cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Cadastrar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Cadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cadastrar.Image")));
-            this.btn_Cadastrar.Location = new System.Drawing.Point(447, 480);
+            this.btn_Cadastrar.Location = new System.Drawing.Point(335, 498);
             this.btn_Cadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cadastrar.Name = "btn_Cadastrar";
             this.btn_Cadastrar.Size = new System.Drawing.Size(296, 62);
@@ -136,8 +141,8 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::AfroPower.Properties.Resources.Tela_de_Cadastro__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, -24);
+            this.pictureBox1.Image = global::AfroPower.Properties.Resources.TelaCadastroD;
+            this.pictureBox1.Location = new System.Drawing.Point(-109, -10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1200, 600);

@@ -44,13 +44,13 @@
             this.dgv_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Clientes.EnableHeadersVisualStyles = false;
             this.dgv_Clientes.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dgv_Clientes.Location = new System.Drawing.Point(156, 104);
+            this.dgv_Clientes.Location = new System.Drawing.Point(373, 106);
             this.dgv_Clientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_Clientes.Name = "dgv_Clientes";
             this.dgv_Clientes.ReadOnly = true;
             this.dgv_Clientes.RowHeadersWidth = 51;
             this.dgv_Clientes.RowTemplate.Height = 24;
-            this.dgv_Clientes.Size = new System.Drawing.Size(927, 404);
+            this.dgv_Clientes.Size = new System.Drawing.Size(550, 404);
             this.dgv_Clientes.TabIndex = 0;
             // 
             // label1

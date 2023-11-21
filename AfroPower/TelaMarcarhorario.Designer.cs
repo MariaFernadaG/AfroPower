@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_horariosmarcar = new System.Windows.Forms.DataGridView();
             this.cb_Servicos = new System.Windows.Forms.ComboBox();
             this.txt_Obeservacao = new System.Windows.Forms.TextBox();
@@ -59,13 +63,44 @@
             // 
             this.dgv_horariosmarcar.AllowUserToAddRows = false;
             this.dgv_horariosmarcar.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Tan;
+            this.dgv_horariosmarcar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_horariosmarcar.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgv_horariosmarcar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_horariosmarcar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_horariosmarcar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_horariosmarcar.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_horariosmarcar.GridColor = System.Drawing.Color.Tan;
             this.dgv_horariosmarcar.Location = new System.Drawing.Point(377, 86);
             this.dgv_horariosmarcar.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_horariosmarcar.MultiSelect = false;
             this.dgv_horariosmarcar.Name = "dgv_horariosmarcar";
             this.dgv_horariosmarcar.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_horariosmarcar.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_horariosmarcar.RowHeadersWidth = 51;
             this.dgv_horariosmarcar.RowTemplate.Height = 24;
             this.dgv_horariosmarcar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

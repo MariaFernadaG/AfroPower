@@ -17,6 +17,7 @@ namespace AfroPower
         public TelaPrincipal()
         {
             InitializeComponent();
+
         }
 
         private void AbrirFormDicas()
@@ -148,8 +149,9 @@ namespace AfroPower
         private void sairDaContaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
-            form1.ShowDialog();
-            this.Close();
+            form1.Show(); 
+            this.Close(); 
         }
+
     }
 }
