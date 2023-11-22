@@ -23,7 +23,7 @@ namespace AfroPower
 
         private void TelaLogin_Load(object sender, EventArgs e)
         {
-
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,14 +44,15 @@ namespace AfroPower
                 Globais.nivel = dt.Rows[0].Field<string>("N_NIVEL");
                 TelaPrincipal n = new TelaPrincipal();
                 n.Show();
-               /* TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
-                telaBoasVindasCliente.Show();*/
+                this.Close();
+                /* TelaBoasVindasCliente telaBoasVindasCliente = new TelaBoasVindasCliente();
+                 telaBoasVindasCliente.Show();*/
             }
             else
             {
                 MessageBox.Show("Usuário ou senha inválidos");
             }
-            this.Close();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

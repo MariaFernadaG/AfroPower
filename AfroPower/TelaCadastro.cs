@@ -29,6 +29,7 @@ namespace AfroPower
                 {
                     Usuario usuario = new Usuario();
                     usuario.nome = txt_nome.Text;
+                    Globais.nome= txt_nome.Text;
                     usuario.email = txt_Email.Text;
                     usuario.senha = txt_senha.Text;
                     usuario.data = maskedData.Text;
