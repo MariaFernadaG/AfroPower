@@ -220,6 +220,9 @@
     <None Include="Resources\BotaoExcluir.png" />
     <None Include="Resources\BotaoSalvar.png" />
     <None Include="Resources\BotaoLimpar.png" />
+    <None Include="Resources\LogoAfroPower.png" />
+    <None Include="Resources\LogoA.png" />
+    <None Include="Resources\LogoB.png" />
     <Content Include="Resources\Tela de Cadastro %283%29.jpg" />
     <None Include="Resources\Tela de Cadastro.jpg" />
     <None Include="Resources\Tela de Login1.jpg" />
